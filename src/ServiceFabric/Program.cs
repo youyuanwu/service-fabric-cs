@@ -1,13 +1,15 @@
 ﻿
 // See https://aka.ms/new-console-template for more information
-using ServiceFabric.FabricCommon;
+using Microsoft.ServiceFabric.FabricCommon;
+using Microsoft.ServiceFabric;
 using Windows.Win32.Foundation;
 
 
-ServiceFabric.FABRIC_ERROR_CODE e = 0;
+FABRIC_ERROR_CODE e = 0;
 
 IFabricStringResult s = new myString("World");
 Console.WriteLine($"Hello, {s.get_String()}!");
+Console.WriteLine($"Error: {e}!");
 
 class myString : IFabricStringResult
 {
