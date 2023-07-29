@@ -1,5 +1,5 @@
-//IFabricServiceManagementClient6
+FabricCreateLocalClient
+IFabricQueryClient
 FABRIC_ERROR_CODE
-FabricCreateClient
 
 IFabricStringResult

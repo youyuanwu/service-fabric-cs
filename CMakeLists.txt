@@ -16,3 +16,11 @@ if(NOT fabric_metadata_POPULATED)
 endif()
 
 #add_subdirectory(src)
+find_program(dotnet_exe
+    NAMES dotnet.exe
+    REQUIRED
+)
+
+add_custom_target(dotnet ALL
+    COMMAND ${dotnet_exe} build ${CMAKE_CURRENT_SOURCE_DIR}/dirs.proj
+)
