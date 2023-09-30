@@ -12,7 +12,7 @@ public class myString : IFabricStringResult
         this.Value = value;
     }
 
-    public PWSTR get_String()
+    public PCWSTR get_String()
     {
         unsafe
         {
